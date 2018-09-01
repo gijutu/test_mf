@@ -1,0 +1,69 @@
+<%= form_for @post do |f| %>
+<% if @post.errors.any? %>
+ <div id="error_explanation">
+   <h2><%= @post.errors.count %>件のエラーがあります。</h2>
+   <ul>
+
+   <% @post.errors.full_messages.each do |msg| %>
+     <li><%= msg %></li>
+   <% end %>
+   </ul>
+ </div>
+<% end %>
+
+  <div class="post_title">
+    <%= label_tag :物件名 %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="post_title">
+    <%= label_tag :賃料 %><br>
+    <%= f.text_field :price %>円
+  </div>
+  <div class="post_title">
+    <%= label_tag :住所 %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="post_title">
+    <%= label_tag :築年数 %><br>
+    <%= f.text_field :old %>年
+  </div>
+  <div class="post_title">
+    <%= label_tag :備考 %><br>
+    <%= f.text_field :remarks %>
+  </div>
+
+  <hr>
+
+  <h3>最寄駅１</h3>
+
+  <div class="post_title">
+    <%= label_tag :路線名 %><br>
+    <%= f.text_field :line_one %>
+  </div>
+  <div class="post_title">
+    <%= label_tag :駅名 %><br>
+    <%= f.text_field :station_one %>
+  </div>
+  <div class="post_title">
+    <%= label_tag :徒歩分数 %><br>
+    <%= f.text_field :walk_time_one %>分
+  </div>
+
+  <h3>最寄駅２</h3>
+
+  <div class="post_title">
+    <%= label_tag :路線名 %><br>
+    <%= f.text_field :line_two %>
+  </div>
+  <div class="post_title">
+    <%= label_tag :駅名 %><br>
+    <%= f.text_field :station_two %>
+  </div>
+  <div class="post_title">
+    <%= label_tag :徒歩分数 %><br>
+    <%= f.text_field :walk_time_two %>分
+  </div>
+
+  <%= f.submit :登録する %>
+<% end %>
+<%= link_to "戻る", posts_path %>

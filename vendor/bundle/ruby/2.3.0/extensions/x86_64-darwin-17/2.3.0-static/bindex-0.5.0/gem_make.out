@@ -1,0 +1,15 @@
+current directory: /Users/michishitatsubasa/workspace/dev-exam/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+/Users/michishitatsubasa/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180831-60172-1icq0bq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/michishitatsubasa/workspace/dev-exam/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/michishitatsubasa/workspace/dev-exam/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/michishitatsubasa/workspace/dev-exam/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180831-60172-54tv9u/bindex
